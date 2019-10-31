@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F1418E71236B18250054D0C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1418E70236B18250054D0C2 /* AppDelegate.swift */; };
+		F1418E73236B18250054D0C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1418E72236B18250054D0C2 /* SceneDelegate.swift */; };
+		F1418E75236B18250054D0C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1418E74236B18250054D0C2 /* ViewController.swift */; };
+		F1418E78236B18250054D0C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1418E76236B18250054D0C2 /* Main.storyboard */; };
+		F1418E7A236B18270054D0C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1418E79236B18270054D0C2 /* Assets.xcassets */; };
+		F1418E7D236B18270054D0C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1418E7B236B18270054D0C2 /* LaunchScreen.storyboard */; };
+		F1418E88236B18270054D0C2 /* Share_It_FastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1418E87236B18270054D0C2 /* Share_It_FastTests.swift */; };
+		F1418E93236B18270054D0C2 /* Share_It_FastUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1418E92236B18270054D0C2 /* Share_It_FastUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F1418E84236B18270054D0C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1418E65236B18250054D0C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1418E6C236B18250054D0C2;
+			remoteInfo = "Share It Fast";
+		};
+		F1418E8F236B18270054D0C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1418E65236B18250054D0C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1418E6C236B18250054D0C2;
+			remoteInfo = "Share It Fast";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F1418E6D236B18250054D0C2 /* Share It Fast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Share It Fast.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1418E70236B18250054D0C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F1418E72236B18250054D0C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F1418E74236B18250054D0C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F1418E77236B18250054D0C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F1418E79236B18270054D0C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1418E7C236B18270054D0C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F1418E7E236B18270054D0C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1418E83236B18270054D0C2 /* Share It FastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Share It FastTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1418E87236B18270054D0C2 /* Share_It_FastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Share_It_FastTests.swift; sourceTree = "<group>"; };
+		F1418E89236B18270054D0C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1418E8E236B18270054D0C2 /* Share It FastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Share It FastUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1418E92236B18270054D0C2 /* Share_It_FastUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Share_It_FastUITests.swift; sourceTree = "<group>"; };
+		F1418E94236B18270054D0C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1418E6A236B18250054D0C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1418E80236B18270054D0C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1418E8B236B18270054D0C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F1418E64236B18250054D0C2 = {
+			isa = PBXGroup;
+			children = (
+				F1418E6F236B18250054D0C2 /* Share It Fast */,
+				F1418E86236B18270054D0C2 /* Share It FastTests */,
+				F1418E91236B18270054D0C2 /* Share It FastUITests */,
+				F1418E6E236B18250054D0C2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F1418E6E236B18250054D0C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1418E6D236B18250054D0C2 /* Share It Fast.app */,
+				F1418E83236B18270054D0C2 /* Share It FastTests.xctest */,
+				F1418E8E236B18270054D0C2 /* Share It FastUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1418E6F236B18250054D0C2 /* Share It Fast */ = {
+			isa = PBXGroup;
+			children = (
+				F1418E70236B18250054D0C2 /* AppDelegate.swift */,
+				F1418E72236B18250054D0C2 /* SceneDelegate.swift */,
+				F1418E74236B18250054D0C2 /* ViewController.swift */,
+				F1418E76236B18250054D0C2 /* Main.storyboard */,
+				F1418E79236B18270054D0C2 /* Assets.xcassets */,
+				F1418E7B236B18270054D0C2 /* LaunchScreen.storyboard */,
+				F1418E7E236B18270054D0C2 /* Info.plist */,
+			);
+			path = "Share It Fast";
+			sourceTree = "<group>";
+		};
+		F1418E86236B18270054D0C2 /* Share It FastTests */ = {
+			isa = PBXGroup;
+			children = (
+				F1418E87236B18270054D0C2 /* Share_It_FastTests.swift */,
+				F1418E89236B18270054D0C2 /* Info.plist */,
+			);
+			path = "Share It FastTests";
+			sourceTree = "<group>";
+		};
+		F1418E91236B18270054D0C2 /* Share It FastUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F1418E92236B18270054D0C2 /* Share_It_FastUITests.swift */,
+				F1418E94236B18270054D0C2 /* Info.plist */,
+			);
+			path = "Share It FastUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1418E6C236B18250054D0C2 /* Share It Fast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1418E97236B18270054D0C2 /* Build configuration list for PBXNativeTarget "Share It Fast" */;
+			buildPhases = (
+				F1418E69236B18250054D0C2 /* Sources */,
+				F1418E6A236B18250054D0C2 /* Frameworks */,
+				F1418E6B236B18250054D0C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Share It Fast";
+			productName = "Share It Fast";
+			productReference = F1418E6D236B18250054D0C2 /* Share It Fast.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F1418E82236B18270054D0C2 /* Share It FastTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1418E9A236B18270054D0C2 /* Build configuration list for PBXNativeTarget "Share It FastTests" */;
+			buildPhases = (
+				F1418E7F236B18270054D0C2 /* Sources */,
+				F1418E80236B18270054D0C2 /* Frameworks */,
+				F1418E81236B18270054D0C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1418E85236B18270054D0C2 /* PBXTargetDependency */,
+			);
+			name = "Share It FastTests";
+			productName = "Share It FastTests";
+			productReference = F1418E83236B18270054D0C2 /* Share It FastTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F1418E8D236B18270054D0C2 /* Share It FastUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1418E9D236B18270054D0C2 /* Build configuration list for PBXNativeTarget "Share It FastUITests" */;
+			buildPhases = (
+				F1418E8A236B18270054D0C2 /* Sources */,
+				F1418E8B236B18270054D0C2 /* Frameworks */,
+				F1418E8C236B18270054D0C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1418E90236B18270054D0C2 /* PBXTargetDependency */,
+			);
+			name = "Share It FastUITests";
+			productName = "Share It FastUITests";
+			productReference = F1418E8E236B18270054D0C2 /* Share It FastUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1418E65236B18250054D0C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Neil Richter";
+				TargetAttributes = {
+					F1418E6C236B18250054D0C2 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					F1418E82236B18270054D0C2 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = F1418E6C236B18250054D0C2;
+					};
+					F1418E8D236B18270054D0C2 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = F1418E6C236B18250054D0C2;
+					};
+				};
+			};
+			buildConfigurationList = F1418E68236B18250054D0C2 /* Build configuration list for PBXProject "Share It Fast" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1418E64236B18250054D0C2;
+			productRefGroup = F1418E6E236B18250054D0C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1418E6C236B18250054D0C2 /* Share It Fast */,
+				F1418E82236B18270054D0C2 /* Share It FastTests */,
+				F1418E8D236B18270054D0C2 /* Share It FastUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1418E6B236B18250054D0C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1418E7D236B18270054D0C2 /* LaunchScreen.storyboard in Resources */,
+				F1418E7A236B18270054D0C2 /* Assets.xcassets in Resources */,
+				F1418E78236B18250054D0C2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1418E81236B18270054D0C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1418E8C236B18270054D0C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1418E69236B18250054D0C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1418E75236B18250054D0C2 /* ViewController.swift in Sources */,
+				F1418E71236B18250054D0C2 /* AppDelegate.swift in Sources */,
+				F1418E73236B18250054D0C2 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1418E7F236B18270054D0C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1418E88236B18270054D0C2 /* Share_It_FastTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1418E8A236B18270054D0C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1418E93236B18270054D0C2 /* Share_It_FastUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F1418E85236B18270054D0C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1418E6C236B18250054D0C2 /* Share It Fast */;
+			targetProxy = F1418E84236B18270054D0C2 /* PBXContainerItemProxy */;
+		};
+		F1418E90236B18270054D0C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1418E6C236B18250054D0C2 /* Share It Fast */;
+			targetProxy = F1418E8F236B18270054D0C2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F1418E76236B18250054D0C2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1418E77236B18250054D0C2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F1418E7B236B18270054D0C2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1418E7C236B18270054D0C2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F1418E95236B18270054D0C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F1418E96236B18270054D0C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1418E98236B18270054D0C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Share It Fast/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "nook.Share-It-Fast";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F1418E99236B18270054D0C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Share It Fast/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "nook.Share-It-Fast";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F1418E9B236B18270054D0C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Share It FastTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "nook.Share-It-FastTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Share It Fast.app/Share It Fast";
+			};
+			name = Debug;
+		};
+		F1418E9C236B18270054D0C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Share It FastTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "nook.Share-It-FastTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Share It Fast.app/Share It Fast";
+			};
+			name = Release;
+		};
+		F1418E9E236B18270054D0C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Share It FastUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "nook.Share-It-FastUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Share It Fast";
+			};
+			name = Debug;
+		};
+		F1418E9F236B18270054D0C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Share It FastUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "nook.Share-It-FastUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Share It Fast";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1418E68236B18250054D0C2 /* Build configuration list for PBXProject "Share It Fast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1418E95236B18270054D0C2 /* Debug */,
+				F1418E96236B18270054D0C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1418E97236B18270054D0C2 /* Build configuration list for PBXNativeTarget "Share It Fast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1418E98236B18270054D0C2 /* Debug */,
+				F1418E99236B18270054D0C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1418E9A236B18270054D0C2 /* Build configuration list for PBXNativeTarget "Share It FastTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1418E9B236B18270054D0C2 /* Debug */,
+				F1418E9C236B18270054D0C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1418E9D236B18270054D0C2 /* Build configuration list for PBXNativeTarget "Share It FastUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1418E9E236B18270054D0C2 /* Debug */,
+				F1418E9F236B18270054D0C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F1418E65236B18250054D0C2 /* Project object */;
+}
