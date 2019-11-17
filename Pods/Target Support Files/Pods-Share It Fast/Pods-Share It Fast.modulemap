@@ -1,0 +1,6 @@
+framework module Pods_Share_It_Fast {
+  umbrella header "Pods-Share It Fast-umbrella.h"
+
+  export *
+  module * { export * }
+}

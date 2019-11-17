@@ -6,15 +6,12 @@
 //  Copyright © 2019 Neil Richter. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
-class ViewController: UIViewController {
-
+class MainViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
 }
 

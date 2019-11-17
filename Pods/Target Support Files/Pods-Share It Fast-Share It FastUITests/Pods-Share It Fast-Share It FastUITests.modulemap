@@ -1,0 +1,6 @@
+framework module Pods_Share_It_Fast_Share_It_FastUITests {
+  umbrella header "Pods-Share It Fast-Share It FastUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
