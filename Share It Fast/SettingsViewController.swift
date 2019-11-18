@@ -16,16 +16,18 @@ class SettingsViewController: UIViewController, UITextFieldDelegate {
     var passwordInput: TextField?
     var hostInput: TextField?
     var portInput: TextField?
+    var remotePathInput: TextField?
 
     override func viewDidLoad() {
         loadElements()
     }
     
     func loadElements() {
+        self.hostInput = basicInput(keyboardType: .URL)
+        self.portInput = basicInput(keyboardType: .numberPad, placeholder: "22")
         self.usernameInput = basicInput()
         self.passwordInput = basicInput(returnKeyType: .done, secret: true)
-        self.hostInput = basicInput(keyboardType: .webSearch)
-        self.portInput = basicInput(keyboardType: .numberPad, placeholder: "22")
+        self.remotePathInput = basicInput(placeholder: "~")
 
         self.view.grid(child: label(title: "Host:"), x: 1, y: 1, height: 1/2, width: 10)
         self.view.grid(child: self.hostInput!, x: 1, y: 3/2, height: 1/2, width: 10)
@@ -35,8 +37,10 @@ class SettingsViewController: UIViewController, UITextFieldDelegate {
         self.view.grid(child: self.usernameInput!, x: 1, y: 7/2, height: 1/2, width: 10)
         self.view.grid(child: label(title: "Password:"), x: 1, y: 4, height: 1/2, width: 10)
         self.view.grid(child: self.passwordInput!, x: 1, y: 9/2, height: 1/2, width: 10)
+        self.view.grid(child: label(title: "Remote path:"), x: 1, y: 5, height: 1/2, width: 10)
+        self.view.grid(child: self.remotePathInput!, x: 1, y: 11/2, height: 1/2, width: 10)
         
-        self.view.grid(child: newButton(title: "Test connection"), x: 1, y: 11/2, height: 1/2, width: 10)
+        self.view.grid(child: newButton(title: "Test connection"), x: 1, y: 13/2, height: 1/2, width: 10)
     }
     
     func basicInput(
@@ -74,12 +78,13 @@ class SettingsViewController: UIViewController, UITextFieldDelegate {
             "username": self.usernameInput!.text!,
             "password": self.passwordInput!.text!,
             "host": self.hostInput!.text!,
-            "remotePath": "~/online/i/dist/"
+            "port": self.portInput!.text!,
+            "remotePath": self.remotePathInput!.text!
         ]
 
         self.showSpinner(onView: self.view)
         AF.request(
-            "https://nook-scp-relay.localtunnel.me/credentials",
+            "https://neko.nook.sh/credentials",
             method: .post,
             parameters: parameters,
             encoder: JSONParameterEncoder.default
