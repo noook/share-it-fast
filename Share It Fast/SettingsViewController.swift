@@ -17,6 +17,7 @@ class SettingsViewController: UIViewController, UITextFieldDelegate {
     var hostInput: TextField?
     var portInput: TextField?
     var remotePathInput: TextField?
+    var remoteUrlInput: TextField?
 
     override func viewDidLoad() {
         loadElements()
@@ -26,8 +27,9 @@ class SettingsViewController: UIViewController, UITextFieldDelegate {
         self.hostInput = basicInput(keyboardType: .URL)
         self.portInput = basicInput(keyboardType: .numberPad, placeholder: "22")
         self.usernameInput = basicInput()
-        self.passwordInput = basicInput(returnKeyType: .done, secret: true)
+        self.passwordInput = basicInput(secret: true)
         self.remotePathInput = basicInput(placeholder: "~")
+        self.remoteUrlInput = basicInput(keyboardType: .URL, placeholder: "https://domain.tld")
 
         self.view.grid(child: label(title: "Host:"), x: 1, y: 1, height: 1/2, width: 10)
         self.view.grid(child: self.hostInput!, x: 1, y: 3/2, height: 1/2, width: 10)
@@ -39,8 +41,10 @@ class SettingsViewController: UIViewController, UITextFieldDelegate {
         self.view.grid(child: self.passwordInput!, x: 1, y: 9/2, height: 1/2, width: 10)
         self.view.grid(child: label(title: "Remote path:"), x: 1, y: 5, height: 1/2, width: 10)
         self.view.grid(child: self.remotePathInput!, x: 1, y: 11/2, height: 1/2, width: 10)
+        self.view.grid(child: label(title: "Remote URL:"), x: 1, y: 6, height: 1/2, width: 10)
+        self.view.grid(child: self.remoteUrlInput!, x: 1, y: 13/2, height: 1/2, width: 10)
         
-        self.view.grid(child: newButton(title: "Test connection"), x: 1, y: 13/2, height: 1/2, width: 10)
+        self.view.grid(child: newButton(title: "Test connection"), x: 1, y: 15/2, height: 1/2, width: 10)
     }
     
     func basicInput(
@@ -79,7 +83,8 @@ class SettingsViewController: UIViewController, UITextFieldDelegate {
             "password": self.passwordInput!.text!,
             "host": self.hostInput!.text!,
             "port": self.portInput!.text!,
-            "remotePath": self.remotePathInput!.text!
+            "remotePath": self.remotePathInput!.text!,
+            "remoteUrl": self.remoteUrlInput!.text!,
         ]
 
         self.showSpinner(onView: self.view)
@@ -95,6 +100,8 @@ class SettingsViewController: UIViewController, UITextFieldDelegate {
                 self.alert(message: "Invalid credentials")
             } else if (response.response?.statusCode == 200) {
                 self.alert(message: "Connection successful")
+                UserDefaults.standard.set(parameters, forKey: "connectionSettings")
+                self.tabBarController?.selectedIndex = 1
             } else if (response.response?.statusCode == 400) {
                 self.alert(message: "Remote path does not exist+")
             }

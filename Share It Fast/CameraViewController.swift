@@ -7,15 +7,21 @@
 //
 
 import UIKit
+import Alamofire
 
 class CameraViewController: UIViewController {
     var imageView: UIImageView = UIImageView()
     var pickButton: UIButton = UIButton()
     var sendButton: UIButton = UIButton()
+    var connectionSettings: [String: String] = [:]
     var imagePicker: ImagePicker!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let retrievedDict = UserDefaults.standard.dictionary(forKey: "connectionSettings") {
+            self.connectionSettings = retrievedDict as! [String: String]
+        }
         
         self.imageView.contentMode = .scaleAspectFit
         
@@ -26,6 +32,7 @@ class CameraViewController: UIViewController {
         self.sendButton.setTitle("Send", for: .normal)
         self.sendButton.setTitleColor(.systemBlue, for: .normal)
         self.sendButton.isHidden = true
+        self.sendButton.addTarget(self, action: #selector(sendImage(_:)), for: .touchUpInside)
 
         self.view.grid(child: self.imageView, x: 0, y: 0, height: 8, width: 12)
         self.view.grid(child: self.pickButton, x: 4, y: 8, height: 1/2, width: 4)
@@ -35,6 +42,35 @@ class CameraViewController: UIViewController {
     
     @objc func showImagePicker(_ sender: UIButton) {
         self.imagePicker.present(from: sender)
+    }
+    
+    @objc func sendImage(_ sender: UIButton) {
+        let imgData = self.imageView.image!.pngData()
+        self.showSpinner(onView: self.view)
+        AF.upload(multipartFormData: { multipartFormData in
+            for (key, value) in self.connectionSettings {
+                multipartFormData.append(value.data(using: .utf8)!, withName: key)
+            }
+            multipartFormData.append(imgData!, withName: "file", fileName: "file.png", mimeType: "image/jpg")
+        }, to: "https://neko.nook.sh/file")
+            .responseJSON { response in
+                self.removeSpinner()
+                let link: String = (response.value! as! [String: String])["link"]!
+                self.alertSuccess(link: link)
+            }
+    }
+    
+    func alertSuccess(link: String) {
+        let alert = UIAlertController(title: nil, message: "Success uploading the file", preferredStyle: .alert)
+        alert.view.backgroundColor = .black
+        alert.view.alpha = 0.7
+        alert.view.layer.cornerRadius = 15
+        
+        self.present(alert, animated: true)
+        
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
+            alert.dismiss(animated: true)
+        }
     }
 }
 

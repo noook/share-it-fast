@@ -11,6 +11,7 @@
 		88795E7561A00ABAB3F1F4A2 /* Pods_Share_It_Fast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C1617155041FDC9CDC1000 /* Pods_Share_It_Fast.framework */; };
 		A65471F2B853A95A68E429A3 /* Pods_Share_It_Fast_Share_It_FastUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD6DF62568F6E162D09EF7D /* Pods_Share_It_Fast_Share_It_FastUITests.framework */; };
 		F107B5CE238BDF94003822F4 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F107B5CD238BDF94003822F4 /* ImagePicker.swift */; };
+		F107B5D0238BF3EE003822F4 /* DictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F107B5CF238BF3EE003822F4 /* DictionaryExtension.swift */; };
 		F1418E71236B18250054D0C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1418E70236B18250054D0C2 /* AppDelegate.swift */; };
 		F1418E73236B18250054D0C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1418E72236B18250054D0C2 /* SceneDelegate.swift */; };
 		F1418E75236B18250054D0C2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1418E74236B18250054D0C2 /* MainViewController.swift */; };
@@ -54,6 +55,7 @@
 		DE9B0F77BDC564E89BBF167E /* Pods-Share It Fast-Share It FastUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Share It Fast-Share It FastUITests.debug.xcconfig"; path = "Target Support Files/Pods-Share It Fast-Share It FastUITests/Pods-Share It Fast-Share It FastUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E287E45DCC95F14F333CF33F /* Pods-Share It Fast-Share It FastUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Share It Fast-Share It FastUITests.release.xcconfig"; path = "Target Support Files/Pods-Share It Fast-Share It FastUITests/Pods-Share It Fast-Share It FastUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F107B5CD238BDF94003822F4 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		F107B5CF238BF3EE003822F4 /* DictionaryExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExtension.swift; sourceTree = "<group>"; };
 		F1418E6D236B18250054D0C2 /* Share It Fast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Share It Fast.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1418E70236B18250054D0C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1418E72236B18250054D0C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				F1418EA6236B23860054D0C2 /* UIViewExtension.swift */,
 				F1418EA8236B2D290054D0C2 /* TextField.swift */,
 				F107B5CD238BDF94003822F4 /* ImagePicker.swift */,
+				F107B5CF238BF3EE003822F4 /* DictionaryExtension.swift */,
 			);
 			path = "Share It Fast";
 			sourceTree = "<group>";
@@ -432,6 +435,7 @@
 				F1418EA1236B1C210054D0C2 /* ListViewController.swift in Sources */,
 				F1418EA3236B1C4D0054D0C2 /* SettingsViewController.swift in Sources */,
 				F1418EA7236B23860054D0C2 /* UIViewExtension.swift in Sources */,
+				F107B5D0238BF3EE003822F4 /* DictionaryExtension.swift in Sources */,
 				F1418E73236B18250054D0C2 /* SceneDelegate.swift in Sources */,
 				F1418EA5236B1C8D0054D0C2 /* CameraViewController.swift in Sources */,
 			);
