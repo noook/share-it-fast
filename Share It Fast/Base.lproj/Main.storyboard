@@ -12,13 +12,14 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="AdI-M0-zpt" customClass="MainViewController" customModule="Share_It_Fast" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="vmc-tf-Obt"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fkl-fs-xj6">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="KFg-Ow-Z1O" kind="relationship" relationship="viewControllers" id="by5-jg-llD"/>
+                        <segue destination="pjR-WE-Oxa" kind="relationship" relationship="viewControllers" id="vZn-Al-2I0"/>
                         <segue destination="u6f-oy-zqC" kind="relationship" relationship="viewControllers" id="nwb-Nr-wa0"/>
                         <segue destination="JAc-YX-hMr" kind="relationship" relationship="viewControllers" id="YOI-BR-5dt"/>
                     </connections>
@@ -60,20 +61,33 @@
             <point key="canvasLocation" x="1048" y="834"/>
         </scene>
         <!--List-->
-        <scene sceneID="vhb-jl-EDN">
+        <scene sceneID="lsa-oI-Vhw">
             <objects>
-                <viewController id="KFg-Ow-Z1O" customClass="ListViewController" customModule="Share_It_Fast" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="xdR-C6-ito">
+                <tableViewController id="pjR-WE-Oxa" customClass="ListViewController" customModule="Share_It_Fast" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="aB1-pk-EsH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="e6A-iZ-ltM"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="List" id="dps-kv-96S"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2S5-9T-Lyz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LinkItemCell" id="WZI-qV-XP4">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WZI-qV-XP4" id="7yH-Yu-27X" customClass="UITableViewCell">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="pjR-WE-Oxa" id="MLL-c8-EiQ"/>
+                            <outlet property="delegate" destination="pjR-WE-Oxa" id="wVU-cL-Ep2"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="List" id="owd-bh-Dbe"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dmR-Lz-SvD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-803" y="834"/>
+            <point key="canvasLocation" x="-736" y="834"/>
         </scene>
     </scenes>
 </document>

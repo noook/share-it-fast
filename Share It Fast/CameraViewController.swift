@@ -56,11 +56,12 @@ class CameraViewController: UIViewController {
             .responseJSON { response in
                 self.removeSpinner()
                 let link: String = (response.value! as! [String: String])["link"]!
-                self.alertSuccess(link: link)
+                self.alertSuccess()
+                self.saveLink(link: link)
             }
     }
     
-    func alertSuccess(link: String) {
+    func alertSuccess() {
         let alert = UIAlertController(title: nil, message: "Success uploading the file", preferredStyle: .alert)
         alert.view.backgroundColor = .black
         alert.view.alpha = 0.7
@@ -71,6 +72,12 @@ class CameraViewController: UIViewController {
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
             alert.dismiss(animated: true)
         }
+    }
+    
+    func saveLink(link: String) {
+        var links = LinkItem.loadLinks()
+        links.insert(LinkItem(link: link, timestamp: Date.init()), at: 0)
+        LinkItem.save(elements: links)
     }
 }
 

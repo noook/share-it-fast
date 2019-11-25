@@ -6,6 +6,7 @@ target 'Share It Fast' do
   use_frameworks!
 
   pod 'Alamofire', '~> 5.0.0-rc.3'
+  pod 'SwiftyJSON', '~> 4.0'
 
   # Pods for Share It Fast
 
