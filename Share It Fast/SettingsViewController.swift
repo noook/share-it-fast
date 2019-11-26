@@ -94,7 +94,6 @@ class SettingsViewController: UIViewController, UITextFieldDelegate {
             parameters: parameters,
             encoder: JSONParameterEncoder.default
         ).response { response in
-            debugPrint(response)
             self.removeSpinner()
             if (response.response?.statusCode == 401) {
                 self.alert(message: "Invalid credentials")

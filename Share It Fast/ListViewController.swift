@@ -20,7 +20,6 @@ class ListViewController: UITableViewController {
         super.viewDidAppear(animated)
         self.linkItems = LinkItem.loadLinks()
         self.tableView.reloadData()
-        print(self.linkItems)
     }
     
     override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
@@ -37,12 +36,21 @@ class ListViewController: UITableViewController {
         return "Links"
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let link = self.linkItems[indexPath.row]
+        if let url = URL(string: link.link) {
+            UIApplication.shared.open(url)
+        }
+    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "LinkItemCell", for: indexPath)
         
         let linkItem = self.linkItems[indexPath.row]
         cell.textLabel?.text = linkItem.link
+        cell.textLabel?.textColor = .systemBlue
         cell.detailTextLabel?.text = linkItem.timestamp.toString(format: "dd-MM-yyyy HH:mm:ss")
+        cell.detailTextLabel?.textColor = .systemGray
         
         return cell
     }
@@ -50,6 +58,7 @@ class ListViewController: UITableViewController {
     func copyAction(at indexPath: IndexPath) -> UIContextualAction {
         let link = self.linkItems[indexPath.row]
         let action = UIContextualAction(style: .normal, title: "Copy") { (action, view, completion) in
+            UIPasteboard.general.string = link.link
             completion(true)
         }
         
@@ -61,7 +70,11 @@ class ListViewController: UITableViewController {
     
     func shareAction(at indexPath: IndexPath) -> UIContextualAction {
         let link = self.linkItems[indexPath.row]
+        let textShare = [link.link]
         let action = UIContextualAction(style: .normal, title: "Share") { (action, view, completion) in
+            let activityViewController = UIActivityViewController(activityItems: textShare , applicationActivities: nil)
+            activityViewController.popoverPresentationController?.sourceView = self.view
+            self.present(activityViewController, animated: true, completion: nil)
             completion(true)
         }
         
@@ -70,4 +83,3 @@ class ListViewController: UITableViewController {
         return action
     }
 }
-

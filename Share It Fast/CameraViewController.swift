@@ -78,6 +78,7 @@ class CameraViewController: UIViewController {
         var links = LinkItem.loadLinks()
         links.insert(LinkItem(link: link, timestamp: Date.init()), at: 0)
         LinkItem.save(elements: links)
+        self.tabBarController?.selectedIndex = 0
     }
 }
 
