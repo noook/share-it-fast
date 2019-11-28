@@ -100,10 +100,51 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="List" id="owd-bh-Dbe"/>
+                    <connections>
+                        <segue destination="Xos-oz-A2a" kind="show" identifier="LinkDetail" id="Uf9-kL-IDk"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dmR-Lz-SvD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-736" y="834"/>
+        </scene>
+        <!--Link Detail View Controller-->
+        <scene sceneID="62I-Uz-neB">
+            <objects>
+                <viewController id="Xos-oz-A2a" customClass="LinkDetailViewController" customModule="Share_It_Fast" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nKh-uf-U6u">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Link" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dTt-EG-SNc">
+                                <rect key="frame" x="28" y="34" width="62.5" height="38.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7UZ-W3-ytM">
+                                <rect key="frame" x="28" y="75" width="366" height="237"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="7UZ-W3-ytM" firstAttribute="leading" secondItem="dTt-EG-SNc" secondAttribute="leading" id="OE1-Gk-dSz"/>
+                            <constraint firstItem="dTt-EG-SNc" firstAttribute="leading" secondItem="TGs-K6-ei0" secondAttribute="leading" constant="28" id="Tef-dm-12U"/>
+                            <constraint firstItem="TGs-K6-ei0" firstAttribute="trailing" secondItem="7UZ-W3-ytM" secondAttribute="trailing" constant="20" id="VcV-ob-E00"/>
+                            <constraint firstItem="7UZ-W3-ytM" firstAttribute="leading" secondItem="TGs-K6-ei0" secondAttribute="leading" constant="28" id="aAo-2B-mfu"/>
+                            <constraint firstItem="7UZ-W3-ytM" firstAttribute="top" secondItem="dTt-EG-SNc" secondAttribute="bottom" constant="8" id="beV-7f-xY9"/>
+                            <constraint firstItem="dTt-EG-SNc" firstAttribute="top" secondItem="TGs-K6-ei0" secondAttribute="top" constant="34" id="w8W-WV-8ba"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TGs-K6-ei0"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qi6-xo-vaU"/>
+                    <connections>
+                        <outlet property="imageView" destination="7UZ-W3-ytM" id="xA6-Tl-oRu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z33-eC-PVQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-736.23188405797111" y="1557.5892857142856"/>
         </scene>
     </scenes>
 </document>

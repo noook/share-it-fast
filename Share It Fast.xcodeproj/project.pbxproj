@@ -27,6 +27,8 @@
 		F1418EA5236B1C8D0054D0C2 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1418EA4236B1C8D0054D0C2 /* CameraViewController.swift */; };
 		F1418EA7236B23860054D0C2 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1418EA6236B23860054D0C2 /* UIViewExtension.swift */; };
 		F1418EA9236B2D290054D0C2 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1418EA8236B2D290054D0C2 /* TextField.swift */; };
+		F185C147238FE22D00C8A9DE /* LinkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F185C146238FE22D00C8A9DE /* LinkDetailViewController.swift */; };
+		F185C149238FF01300C8A9DE /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F185C148238FF01300C8A9DE /* UIImageViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,8 @@
 		F1418EA4236B1C8D0054D0C2 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		F1418EA6236B23860054D0C2 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		F1418EA8236B2D290054D0C2 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		F185C146238FE22D00C8A9DE /* LinkDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkDetailViewController.swift; sourceTree = "<group>"; };
+		F185C148238FF01300C8A9DE /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +177,8 @@
 				F107B5CF238BF3EE003822F4 /* DictionaryExtension.swift */,
 				F107B5D1238C19DB003822F4 /* DateExtension.swift */,
 				F107B5D3238C245E003822F4 /* LinkItem.swift */,
+				F185C146238FE22D00C8A9DE /* LinkDetailViewController.swift */,
+				F185C148238FF01300C8A9DE /* UIImageViewExtension.swift */,
 			);
 			path = "Share It Fast";
 			sourceTree = "<group>";
@@ -442,8 +448,10 @@
 				F1418EA3236B1C4D0054D0C2 /* SettingsViewController.swift in Sources */,
 				F107B5D4238C245E003822F4 /* LinkItem.swift in Sources */,
 				F107B5D2238C19DB003822F4 /* DateExtension.swift in Sources */,
+				F185C149238FF01300C8A9DE /* UIImageViewExtension.swift in Sources */,
 				F1418EA7236B23860054D0C2 /* UIViewExtension.swift in Sources */,
 				F107B5D0238BF3EE003822F4 /* DictionaryExtension.swift in Sources */,
+				F185C147238FE22D00C8A9DE /* LinkDetailViewController.swift in Sources */,
 				F1418E73236B18250054D0C2 /* SceneDelegate.swift in Sources */,
 				F1418EA5236B1C8D0054D0C2 /* CameraViewController.swift in Sources */,
 			);

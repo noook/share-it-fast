@@ -38,9 +38,7 @@ class ListViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let link = self.linkItems[indexPath.row]
-        if let url = URL(string: link.link) {
-            UIApplication.shared.open(url)
-        }
+        self.performSegue(withIdentifier: "LinkDetail", sender: link)
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -81,5 +79,31 @@ class ListViewController: UITableViewController {
         action.backgroundColor = .systemBlue
         
         return action
+    }
+    
+    override func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let open = openUrlAction(at: indexPath)
+        
+        return UISwipeActionsConfiguration(actions: [open])
+    }
+    
+    func openUrlAction(at indexPath: IndexPath) ->UIContextualAction {
+        let link = self.linkItems[indexPath.row]
+        
+        let action = UIContextualAction(style: .normal, title: "Open") { (action, view, completion) in
+            if let url = URL(string: link.link) {
+                UIApplication.shared.open(url)
+            }
+            completion(true)
+        }
+
+        return action
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "LinkDetail"){
+            let vc = segue.destination as! LinkDetailViewController
+            vc.link = (sender as! LinkItem)
+        }
     }
 }
