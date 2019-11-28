@@ -96,6 +96,8 @@ class ListViewController: UITableViewController {
             }
             completion(true)
         }
+        
+        action.backgroundColor = .systemBlue
 
         return action
     }
